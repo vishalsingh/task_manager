@@ -1,0 +1,14 @@
+git status
+  739  git add *
+  740  git commit -a -m "Initial Commit"
+  741  git push -u  origin master
+  742  git pull
+  743  git pull origin master
+  744  git checkout -f
+  745  git pull origin master
+  746  git commit -a
+  747  git commit -a 
+  748  git pull origin master
+  749  git commit -a
+  750  git push
+
