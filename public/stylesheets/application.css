@@ -1,0 +1,10 @@
+
+
+
+body { background: white; color:#333; }
+.container { width:980px; margin:0 auto; background:#dadada; padding:10px; }
+
+
+form .field { clear: both; }
+form label { float:left; width:150px;  text-align:right;}
+input[type='text'], input[type='password'], textarea, select { margin-left: 50px;  }

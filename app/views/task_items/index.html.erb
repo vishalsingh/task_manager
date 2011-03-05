@@ -1,0 +1,36 @@
+<h1>List of task_items</h1>
+<table border = '1' table bordercolor = 'grey'>
+
+
+  <tr>
+    <th>Title</th>
+    <th>Summary</th>
+    <th>Start date</th>
+    <th>End date</th>
+    <th>Status</th>
+    <th>Priority</th>
+    <th>Total hours of work</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @task_items.each do |task_item| %>
+  <tr>
+    <td><%= task_item.title %></td>
+    <td><%= task_item.summary %></td>
+    <td><%= task_item.start_date %></td>
+    <td><%= task_item.end_date %></td>
+    <td><%= task_item.status %></td>
+    <td><%= task_item.priority %></td>
+    <td><%= task_item.total_hours_of_work %></td>
+    <td><%= link_to 'Show', task_item %></td>
+    <td><%= link_to 'Edit', edit_task_item_path(task_item) %></td>
+    <td><%= link_to 'Destroy', task_item, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Task item', new_task_item_path %>
